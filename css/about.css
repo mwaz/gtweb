@@ -1,0 +1,139 @@
+/** About Page **/
+
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9fff9; /* Background color */
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50; /* Dark green for header */
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Active link */
+header nav ul li a.active {
+    font-weight: bold;
+}
+
+/* Main about section styles */
+.about-main {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+/* Mission section styles */
+.about-mission-section {
+    padding: 30px 20px;
+    background-color: #f0f9f0; /* Light green background to blend with the overall green theme */
+    border-radius: 8px; /* Slightly rounded corners for modern look */
+    margin-bottom: 30px; /* Space between sections */
+}
+
+.about-mission-section h2 {
+    font-size: 28px;
+    color: #2e8b57; /* Darker green for headings */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8fbc8f; /* Add subtle bottom border for emphasis */
+    padding-bottom: 10px;
+}
+
+.about-mission-section p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ethical sourcing section styles */
+.about-ethical-sourcing-section {
+    padding: 30px 20px;
+    background-color: #f0f9f0; /* Light green background */
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.about-ethical-sourcing-section h2 {
+    font-size: 28px;
+    color: #2e8b57;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 10px;
+}
+
+.about-ethical-sourcing-section p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-ethical-sourcing-section ul {
+    list-style-type: disc; /* Traditional bullet points */
+    padding-left: 40px; /* Increased padding for better alignment */
+    margin-bottom: 20px;
+}
+
+.about-ethical-sourcing-section li {
+    margin-bottom: 15px; /* Space between each bullet point */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444; /* Darker text color for readability */
+}
+
+/* Strong tags to highlight key phrases */
+.about-ethical-sourcing-section li strong {
+    color: #2e8b57; /* Green for highlighted terms */
+    font-weight: 600; /* Make the keywords bold */
+}
+
+/* Eco-friendly packaging section styles */
+.about-packaging-section, .about-brands-section {
+    padding: 30px 20px;
+    background-color: #f0f9f0; /* Light green background */
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.about-packaging-section h2 {
+    font-size: 28px;
+    color: #2e8b57;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #8fbc8f;
+    padding-bottom: 10px;
+}
+
+.about-packaging-section p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+

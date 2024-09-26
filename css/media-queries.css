@@ -1,0 +1,77 @@
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .about-main {
+        padding: 15px;
+    }
+
+    .about-main h1 {
+        font-size: 28px;
+    }
+
+    .about-mission-section h2,
+    .about-ethical-sourcing-section h2,
+    .about-packaging-section h2 {
+        font-size: 24px;
+    }
+
+    .about-mission-section p,
+    .about-ethical-sourcing-section p,
+    .about-packaging-section p {
+        font-size: 16px;
+    }
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Stack the navigation links vertically */
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .about-teaser h2, .sustainability-section h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+}
