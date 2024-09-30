@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Greentwiste Exporters is committed to providing high-quality herbs through ethical sourcing and sustainable practices in Kenya. We protect the environment and support local communities.">
+    <meta name="description" content="Greentwiste Growers and Exporters is committed to providing high-quality herbs through ethical sourcing and sustainable practices in Kenya. We protect the environment and support local communities.">
     <meta name="keywords" content="Greentwiste, herb exports, sustainable farming, ethical sourcing, biodegradable packaging, water conservation, renewable energy, environmental responsibility, Kenya">
-    <meta name="author" content="Greentwiste Exporters">
+    <meta name="author" content="Greentwiste Growers and Exporters">
     <meta name="location" content="Kenya"> <!-- Added location tag -->
     <title>About Us - Greentwiste Exporters</title>
 
@@ -14,7 +14,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Greentwiste Exporters",
+      "name": "Greentwiste Growers and Exporters",
       "url": "https://www.greentwisteexporters.com",
       "logo": "https://www.greentwiste.com/logo.png",
       "sameAs": [
@@ -27,7 +27,7 @@
         "contactType": "Customer Service",
         "availableLanguage": "English"
       },
-      "description": "Greentwiste Exporters provides fresh herbs through sustainable farming and eco-friendly packaging in Kenya."
+      "description": "Greentwiste Growers and Exporters provides fresh herbs through sustainable farming and eco-friendly packaging in Kenya."
     }
     </script>
 
@@ -48,6 +48,10 @@
       rel="stylesheet"
       href="css/about.css"
     />
+     <link
+      rel="stylesheet"
+      href="css/hamburger.css"
+    />
 
 </head>
 
@@ -56,9 +60,16 @@
     <header class="header">
         <div class="logo">
             <img src="images/logo.png" alt="Greentwiste Exporters Logo">
+            <span>Greentwiste Growers and Exporters </span>
+            <span> Phone: +254702449450 </span>
+            <span> Email: info@greentwisteexporters.com </span>
         </div>
         <nav class="nav">
-            <ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div id="hamburger" class="hamburger">&#9776;</div>
+  </a>
+        
+            <ul id="menu" class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="index.html#products">Products</a></li>
@@ -124,7 +135,7 @@
         </div>
         <div class="product-card">
           <img
-            src="images/green-twiste-farms-logo.png"
+            src="images/green-twiste-logo.png"
             alt="Green Twiste"
           />
           <h3>Green Twiste Farms</h3>
@@ -149,5 +160,6 @@
     <!-- Link to main JavaScript file -->
     <script src="js/scripts.js"></script>
     <script src="js/tawk.js"></script>
+    <script src="js/hamburger.js"></script>
 </body>
 </html>

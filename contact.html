@@ -62,18 +62,26 @@
       rel="stylesheet"
       href="css/contact.css"
     />
+     <link
+      rel="stylesheet"
+      href="css/hamburger.css"
+    />
   </head>
   <body>
     <!-- Header Section -->
     <header class="header">
-      <div class="logo">
-        <img
-          src="logo.png"
-          alt="Greentwiste Exporters Logo"
-        />
-      </div>
-      <nav class="nav">
-        <ul>
+        <div class="logo">
+            <img src="images/logo.png" alt="Greentwiste Exporters Logo">
+            <span>Greentwiste Growers and Exporters </span>
+            <span> Phone: +254702449450 </span>
+            <span> Email: info@greentwisteexporters.com </span>
+        </div>
+        <nav class="nav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <div id="hamburger" class="hamburger">&#9776;</div>
+  </a>
+        
+            <ul id="menu" class="nav-list">
           <li><a href="index.html#home">Home</a></li>
           <li><a href="about.html">About Us</a></li>
           <li><a href="index.html#products">Products</a></li>
@@ -168,5 +176,6 @@
     </footer>
     <script src="js/scripts.js"></script>
     <script src="js/tawk.js"></script>
+    <script src="js/hamburger.js"></script>
   </body>
 </html>
