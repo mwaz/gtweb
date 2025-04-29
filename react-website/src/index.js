@@ -13,6 +13,9 @@ import "./css/sustainability.css";
 import "./css/herb-modal.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import './i18n';
+import { I18nextProvider } from 'react-i18next';
+import i18n from './i18n';
 import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -39,7 +42,9 @@ root.render(
           `,
         }}
       />
-      <App />
+      <I18nextProvider i18n={i18n}>
+        <App />
+      </I18nextProvider>
     </HelmetProvider>
   </React.StrictMode>
 );

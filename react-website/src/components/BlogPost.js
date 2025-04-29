@@ -1,9 +1,11 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import { blogPosts } from "../blog-posts";
 import images from "../js/images";
 
 function BlogPost() {
+  const { t } = useTranslation();
   const { postId } = useParams();
   const post = blogPosts.find((post) => post.slug === postId);
 

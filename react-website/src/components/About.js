@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from "react-i18next";
 import images from "../js/images";
 
 function About() {
+  const { t } = useTranslation();
   return (
     <div>
       <Helmet>
@@ -20,7 +22,7 @@ function About() {
           content="Greentwiste Growers and Exporters"
         />
         <title>
-          About Us - Greentwiste Exporters | Sustainable Herbs from Kenya
+          {t('about')} - Greentwiste Exporters | Sustainable Herbs from Kenya
         </title>
       </Helmet>
       <header className="header">
@@ -52,26 +54,26 @@ function About() {
             className="nav-list"
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('home')}</Link>
             </li>
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about">{t('about')}</a>
             </li>
             <li>
-              <Link to="/">Products</Link>
+              <Link to="/">{t('products')}</Link>
             </li>
             <li>
-              <Link to="/sustainability">Sustainability</Link>
+              <Link to="/sustainability">{t('sustainability')}</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">{t('contact')}</Link>
             </li>
           </ul>
         </nav>
       </header>
 
       <section className="about-main container">
-        <h1>About Greentwiste Exporters</h1>
+        <h1>{t('about')} Greentwiste Exporters</h1>
         <p>
           At <strong>Greentwiste Exporters</strong>, we are committed to
           providing the highest quality herbs while upholding our responsibility

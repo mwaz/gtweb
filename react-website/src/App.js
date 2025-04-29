@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from 'react-i18next';
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";

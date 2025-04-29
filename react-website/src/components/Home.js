@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import images from "../js/images";
@@ -9,6 +10,7 @@ import HerbModal from "./HerbModal";
 // Recommendation: Consider extracting the Header into its own reusable component
 // and placing it in App.js for consistency across all pages.
 function Home() {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHerbModalOpen, setIsHerbModalOpen] = useState(false);
   const [selectedHerb, setSelectedHerb] = useState(null);
@@ -92,7 +94,7 @@ function Home() {
                 href="#home"
                 onClick={toggleMenu}
               >
-                Home
+                {t('home')}
               </a>{" "}
               {/* Close menu on click */}
             </li>
@@ -101,7 +103,7 @@ function Home() {
                 href="#about"
                 onClick={toggleMenu}
               >
-                About Us
+                {t('about')}
               </a>
             </li>
             <li>
@@ -117,7 +119,7 @@ function Home() {
                 href="#sustainability"
                 onClick={toggleMenu}
               >
-                Sustainability
+                {t('sustainability')}
               </a>
             </li>
             <li>
@@ -125,7 +127,7 @@ function Home() {
                 to="/contact"
                 onClick={toggleMenu}
               >
-                Contact Us
+                {t('contact')}
               </Link>
             </li>
             <li>
@@ -133,7 +135,7 @@ function Home() {
                 to="/blog"
                 onClick={toggleMenu}
               >
-                Blog
+                {t('blog')}
               </Link>
             </li>
           </ul>
@@ -146,7 +148,7 @@ function Home() {
       >
         <div className="hero-content">
           {/* Updated Headline and Sub-headline */}
-          <h1>Premium Fresh Herbs, Sustainably Sourced for Your Business</h1>
+          <h1>{t('premiumHerbs')}</h1>
           <p>
             Experience consistent quality and exceptional service from a leading
             herb exporter committed to sustainable practices.
@@ -156,7 +158,7 @@ function Home() {
             onClick={openModal}
             className="btn btn-primary"
           >
-            Get a Customized Quote
+            {t('contactForm')}
           </button>
         </div>
       </section>
@@ -189,7 +191,7 @@ function Home() {
         id="products"
         className="featured-products"
       >
-        <h2>Our Featured Herbs</h2>
+        <h2>{t('products')}</h2>
         {/* Consider making the title a link to="/contact"><h2>Our Featured Herbs</h2></Link> */}
         <div className="products-grid">
           {/* TODO: Make these cards linkable to product detail pages or sections when available */}
@@ -320,12 +322,12 @@ function Home() {
         <div style={{ textAlign: "center", marginTop: "2rem" }}>
           {" "}
           {/* Basic styling for centering */}
-          <Link
-            to="/contact"
-            className="btn btn-secondary"
-          >
-            Request Full Catalog
-          </Link>
+            <Link
+              to="/contact"
+              className="btn btn-secondary"
+            >
+              {t('readMore')}
+            </Link>
         </div>
       </section>
 
@@ -459,7 +461,7 @@ function Home() {
             sizes="200px"
             srcSet={`${images.kephisLogo} 3x, ${images.kephisLogo} 2x`}
             alt="Kephis"
-            style={{ maxWidth: "150px" }}
+          style={{ maxWidth: "150px" }}
           />
           <img
             src={images.afaLogo}

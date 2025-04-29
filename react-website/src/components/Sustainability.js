@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from "react-i18next";
 import images from "../js/images";
 
 function Sustainability() {
+  const { t } = useTranslation();
   return (
     <div>
       <Helmet>
@@ -20,7 +22,7 @@ function Sustainability() {
           content="Greentwiste Growers and Exporters"
         />
         <title>
-          Sustainability - Greentwiste Exporters | Eco-Friendly Herbs from Kenya
+          {t('sustainability')} - Greentwiste Exporters | Eco-Friendly Herbs from Kenya
         </title>
       </Helmet>
       <header className="header">
@@ -52,19 +54,19 @@ function Sustainability() {
             className="nav-list"
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">{t('home')}</Link>
             </li>
             <li>
-              <Link to="/about">About Us</Link>
+              <Link to="/about">{t('about')}</Link>
             </li>
             <li>
-              <Link to="/">Products</Link>
+              <Link to="/">{t('products')}</Link>
             </li>
             <li>
-              <Link to="/sustainability">Sustainability</Link>
+              <Link to="/sustainability">{t('sustainability')}</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact">{t('contact')}</Link>
             </li>
           </ul>
         </nav>
@@ -72,7 +74,7 @@ function Sustainability() {
 
       <section className="sustainability-details">
         <div className="container">
-          <h1>Our Commitment to Sustainability</h1>
+          <h1>{t('sustainability')}</h1>
           <p>
             At <strong>Greentwiste Growers and Exporters</strong>, located in
             Kenya, sustainability is not just a practice; it’s a way of life. We
@@ -92,25 +94,19 @@ function Sustainability() {
 
             <ul>
               <li>
-                <strong>Organic Farming:</strong> We grow our herbs using
-                organic methods, avoiding synthetic chemicals where possible,
-                which helps maintain the health of the soil and promotes
+                <strong>Water Conservation:</strong> Advanced irrigation systems,
+                such as drip irrigation, allow us to use water efficiently,
+                reducing waste and supporting local ecosystems.
+              </li>
+              <li>
+                <strong>Crop Diversity:</strong> We practice crop rotation and
+                grow a variety of herbs to maintain soil health and protect
                 biodiversity.
               </li>
               <li>
-                <strong>Water Conservation:</strong> By using advanced
-                irrigation systems, such as drip irrigation, we are able to
-                reduce water waste and make the most of every drop.
-              </li>
-              <li>
-                <strong>Biodiversity Promotion:</strong> Our farming approach
-                involves crop rotation and planting a variety of herbs to
-                preserve soil nutrients and maintain ecological balance.
-              </li>
-              <li>
-                <strong>Renewable Energy:</strong> Our goal is to power our
-                farms using renewable energy, such as solar, to reduce our
-                carbon emissions and reliance on non-renewable resources.
+                <strong>Renewable Energy:</strong> Our farms are gradually
+                shifting toward renewable energy sources, such as solar power, to
+                reduce our reliance on fossil fuels and lower carbon emissions.
               </li>
             </ul>
           </div>
@@ -154,7 +150,7 @@ function Sustainability() {
             to="/"
             className="btn btn-primary"
           >
-            Explore Our Products
+            {t('products')}
           </Link>
         </div>
       </section>

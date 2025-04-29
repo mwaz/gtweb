@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2607d529.css",
-    "main.js": "/static/js/main.8ba16db3.js",
+    "main.js": "/static/js/main.52e8fffb.js",
     "static/js/453.ca3a84db.chunk.js": "/static/js/453.ca3a84db.chunk.js",
     "static/media/herbs-background.jpg": "/static/media/herbs-background.4056d6cc65e773f67dfb.jpg",
     "static/media/basil.jpg": "/static/media/basil.d45e0a4e98575b9ce0b2.jpg",
@@ -24,11 +24,11 @@
     "static/media/made-in-kenya.png": "/static/media/made-in-kenya.15a3424cecee1993f586.png",
     "index.html": "/index.html",
     "main.2607d529.css.map": "/static/css/main.2607d529.css.map",
-    "main.8ba16db3.js.map": "/static/js/main.8ba16db3.js.map",
+    "main.52e8fffb.js.map": "/static/js/main.52e8fffb.js.map",
     "453.ca3a84db.chunk.js.map": "/static/js/453.ca3a84db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2607d529.css",
-    "static/js/main.8ba16db3.js"
+    "static/js/main.52e8fffb.js"
   ]
 }

@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet-async';
 import images from "../js/images";
 import { blogPosts } from "../blog-posts";
 
 function Blog() {
+  const { t } = useTranslation();
   const [shuffledPosts, setShuffledPosts] = useState([...blogPosts]);
 
   const shufflePosts = () => {
@@ -64,7 +66,7 @@ function Blog() {
         <main className="blog-main-content">
           <section className="blog-section featured-post-section">
             <div className="section-header">
-              <h2>Featured Post</h2>
+              <h2>{t('featuredPost')}</h2>
             </div>
             <div id="featured-post-container">
               <Link to={`/blog/${shuffledPosts[0].slug}`}>
@@ -79,7 +81,7 @@ function Blog() {
 
           <section className="blog-section recent-posts-section">
             <div className="section-header">
-              <h2>Recent Posts</h2>
+              <h2>{t('recentPosts')}</h2>
               <a
                 href="#"
                 className="see-all-link"
