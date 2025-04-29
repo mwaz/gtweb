@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2607d529.css",
+    "main.js": "/static/js/main.8ba16db3.js",
+    "static/js/453.ca3a84db.chunk.js": "/static/js/453.ca3a84db.chunk.js",
+    "static/media/herbs-background.jpg": "/static/media/herbs-background.4056d6cc65e773f67dfb.jpg",
+    "static/media/basil.jpg": "/static/media/basil.d45e0a4e98575b9ce0b2.jpg",
+    "static/media/logo-gb.png": "/static/media/logo-gb.4bc9fb7956ec17b5bc27.png",
+    "static/media/logo-greentwiste.png": "/static/media/logo-greentwiste.4bc9fb7956ec17b5bc27.png",
+    "static/media/oregano.jpg": "/static/media/oregano.283ab378a0a614c7cb3d.jpg",
+    "static/media/mint.jpg": "/static/media/mint.f66f82d8aa283050db0f.jpg",
+    "static/media/rosemary.jpg": "/static/media/rosemary.d5d097d935cc43d462b0.jpg",
+    "static/media/thyme.jpg": "/static/media/thyme.889ba2e1e97710c75f23.jpg",
+    "static/media/afa.png": "/static/media/afa.7aba4059e769bcb714fd.png",
+    "static/media/tarragon.jpg": "/static/media/tarragon.6724717161ef090a372e.jpg",
+    "static/media/logo.png": "/static/media/logo.f71e0d0db5e80f9905fd.png",
+    "static/media/fruit-twiste-logo.jpg": "/static/media/fruit-twiste-logo.c9e236105d780dd2047a.jpg",
+    "static/media/feel_kenya.png": "/static/media/feel_kenya.c9673e27d709becbd75d.png",
+    "static/media/insta.png": "/static/media/insta.1d6d0317700c4f0c95b7.png",
+    "static/media/herb-twiste-logo.jpg": "/static/media/herb-twiste-logo.1de54efdbc6134d79762.jpg",
+    "static/media/spisa.png": "/static/media/spisa.e475a32ba6bd9ed9724a.png",
+    "static/media/x.png": "/static/media/x.cbb3ced8e1f176411362.png",
+    "static/media/taste-kenya.png": "/static/media/taste-kenya.0d29445e044d9f037bec.png",
+    "static/media/made-in-kenya.png": "/static/media/made-in-kenya.15a3424cecee1993f586.png",
+    "index.html": "/index.html",
+    "main.2607d529.css.map": "/static/css/main.2607d529.css.map",
+    "main.8ba16db3.js.map": "/static/js/main.8ba16db3.js.map",
+    "453.ca3a84db.chunk.js.map": "/static/js/453.ca3a84db.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2607d529.css",
+    "static/js/main.8ba16db3.js"
+  ]
+}
