@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    flex-wrap: wrap; /* Allow header content to wrap */
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    /**background-color: rgba(255, 255, 255, 0.1); /* Add a subtle background color */
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: flex-start; /* Align items to the left */
+    width: 50%;
+}
+
+.header-text {
+    font-size: 1.0rem;
+    color: #fff; /* Ensure white color */
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header .logo img {
+    height: 100px; /* Adjust logo size */
+    margin-right: 5px; /* Add some spacing between logo and text */
+}
+
+.header .logo span {
+    display: block; /* Stack the spans */
+    font-weight: bold; /* Make the company name bold */
+    color: #fff; /* Ensure white color */
+}
+
+.logo img {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+}
+
+.header span {
+    font-size: 0.9rem; /* Reduce font size */
+}
+
+.contact-info-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    display: none; /* Hide the menu by default */
+}
+
+.nav ul.show {
+    display: flex; /* Show the menu when the "show" class is present */
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #d4edda;
+}
+
+/* Hero Section */
+.hero-section {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('../images/herbs-background.jpg') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #e9f5e9;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Styling for New Sections */
+#why-choose-us,
+#testimonials,
+#certifications {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Alternate background for visual separation */
+#why-choose-us {
+    background-color: #ffffff; /* White background */
+}
+
+#testimonials {
+    background-color: #e9f5e9; /* Light green tint */
+}
+
+#certifications {
+    background-color: #f4f4f4; /* Default background */
+}
+
+
+/* Common H2 styling for new sections */
+#why-choose-us h2,
+#testimonials h2,
+#certifications h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px; /* Increased margin slightly for better spacing */
+    color: #2e8b57; /* Match button color */
+}
+
+/* Styling for the list in "Why Choose Us" */
+#why-choose-us ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0 auto 30px auto; /* Center list block and add bottom margin */
+    max-width: 600px; /* Constrain width for readability */
+    display: inline-block; /* Allow text-align: left to work correctly */
+    text-align: left; /* Align list items left within the centered block */
+}
+
+#why-choose-us li {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 1.1rem;
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet */
+}
+
+/* Custom bullet style (optional, using pseudo-element) */
+#why-choose-us li::before {
+    content: '✔'; /* Checkmark symbol */
+    color: #3cb371; /* Green color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: bold;
+}
+
+
+/* Placeholder text styling */
+#testimonials p,
+#certifications p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    background-color: #2e8b57;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #266747;
+}
+
+/* Default primary button style (if needed elsewhere) */
+.btn-primary {
+    background-color: #3cb371;
+    transition: background-color 0.3s, transform 0.2s ease-out;
+}
+.btn-primary:hover {
+     background-color: #34a064;
+}
+
+
+/* Enhanced styling specifically for the hero button */
+.hero-content .btn-primary {
+    background-color: #E8772E; /* Contrasting orange */
+    color: #FFFFFF; /* White text */
+    padding: 18px 36px; /* Increased padding */
+    font-size: 1.1rem; /* Slightly larger font */
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    /* Updated transition for background, transform, and shadow */
+    transition: background-color 0.3s, transform 0.2s ease-out, box-shadow 0.3s ease;
+    border: none; /* Remove default border if any */
+    cursor: pointer; /* Ensure pointer cursor */
+}
+
+/* Enhanced hover effect for the hero button */
+.hero-content .btn-primary:hover {
+    background-color: #D46A29; /* Darker orange on hover */
+    transform: scale(1.08); /* Keep scaling effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.btn-secondary {
+    background-color: #8fbc8f;
+}
+
+/* Featured Products */
+.featured-products {
+    padding: 50px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin: 20px 0 10px;
+}
+
+.about-teaser p{
+    padding: 15px;
+}
+
+/* About and Sustainability Sections */
+.about-teaser, .sustainability-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.about-teaser h2, .sustainability-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-teaser h2, .sustainability-section p {
+    /* font-size: 2.5rem; */
+    margin-bottom: 30px;
+}
+
+.hero-content {
+    text-shadow: 1px 1px 2px #266747; /* Add a text shadow for better readability */
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-size: 3.0rem;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    font-size: 1.0rem;
+    color: #fff; /* Ensure white color */
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .logo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav li {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-section {
+        height: 60vh;
+    }
+
+    .header-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-text p {
+        font-size: 0.8rem;
+    }
+
+    .header-text h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 1.0rem;
+    }
+
+    .header-text p {
+        font-size: 0.7rem;
+    }
+}

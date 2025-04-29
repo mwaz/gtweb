@@ -1,0 +1,29 @@
+/* Footer Styles */
+.footer {
+    background: #8fbc8f; /* Green footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social-media img {
+    width: 24px; /* Size for social media icons */
+    margin: 0 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 25px;
+    transition: transform 0.3s;
+}
+
+.social-media img:hover {
+    transform: scale(1.1);
+}

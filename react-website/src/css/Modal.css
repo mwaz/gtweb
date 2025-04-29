@@ -1,0 +1,132 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  z-index: 1000; /* Sit on top */
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+/* Modal Content Box */
+.modal-content {
+  background-color: #ffffff;
+  padding: 30px 40px; /* More padding */
+  border-radius: 8px;
+  position: relative;
+  width: 100%; /* Full width on small screens */
+  max-width: 600px; /* Max width on larger screens */
+  max-height: 90vh; /* Max height */
+  overflow-y: auto; /* Enable scroll if content overflows */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Close Button */
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2rem; /* Larger close icon */
+  color: #888;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px;
+}
+
+.modal-close-button:hover {
+  color: #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+    max-width: 95%; /* Slightly less than full width */
+  }
+  .modal-close-button {
+    top: 5px;
+    right: 10px;
+    font-size: 1.8rem;
+  }
+}
+
+/* Style form elements within the modal if needed */
+.modal-content .contact-form {
+  margin-top: 20px; /* Add some space above the form */
+}
+
+.modal-content h1,
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2e8b57; /* Match theme color */
+}
+
+/* Ensure form groups stack nicely */
+.modal-content .form-group {
+    margin-bottom: 15px;
+}
+
+.modal-content .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.modal-content .form-group input[type="text"],
+.modal-content .form-group input[type="email"],
+.modal-content .form-group input[type="tel"],
+.modal-content .form-group select,
+.modal-content .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif; /* Consistent font family */
+    color: #333; /* Consistent text color */
+    background-color: #fff; /* Ensure white background */
+    appearance: none; /* Remove default arrow styling */
+    -webkit-appearance: none; /* For older browsers */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Add custom arrow */
+.modal-content .form-group select {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg viewBox="0 0 24 24" fill="%23333" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 20px;
+    padding-right: 30px; /* Adjust padding to accommodate arrow */
+}
+
+.modal-content .form-group textarea {
+    resize: vertical; /* Allow vertical resize */
+}
+
+.modal-content .btn {
+    display: block; /* Make button block level */
+    width: 100%; /* Full width */
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #E8772E; /* Match hero button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.modal-content .btn:hover {
+    background-color: #D46A29; /* Darker orange */
+}

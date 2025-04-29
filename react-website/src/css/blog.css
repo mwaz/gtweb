@@ -1,0 +1,391 @@
+/* General Body and Font Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    background-color: #fff; /* White background like the example */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Blog Post Template Styles */
+.blog-post-template {
+    max-width: 700px; /* Wider content area */
+    margin: 30px auto; /* More top/bottom margin */
+    padding: 30px;
+}
+
+/* Category, Date, Read Time */
+.blog-category {
+    font-size: 0.8em;
+    color: #777;
+    text-transform: uppercase;
+    display: inline-block; /* Display on the same line */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.blog-date-read-time {
+    font-size: 0.8em;
+    color: #777;
+    display: inline-block; /* Display on the same line */
+    float: right; /* Push to the right */
+    margin-bottom: 10px;
+}
+
+/* Clearfix to prevent floating issues */
+.blog-title {
+    font-size: 2.5em; /* Larger title */
+    margin-top: 5px;
+    margin-bottom: 30px;
+    clear: both; /* Clear floats */
+    text-align: center; /* Center the title */
+}
+
+/* Author */
+.blog-author {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center; /* Center the author info */
+}
+
+.blog-author img {
+    width: 60px; /* Larger author image */
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.blog-author-info p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.blog-author-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.blog-author-title {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Image */
+.blog-image {
+    width: 100%;
+    max-height: 400px; /* Limit image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    display: block; /* Ensure it's a block-level element */
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+    text-align: center;
+}
+
+/* Content */
+.blog-content {
+    margin-top: 30px;
+    text-align: left; /* Reset text alignment for content */
+}
+
+.blog-content h2 {
+    font-size: 1.8em;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: #444;
+}
+
+.blog-content h3 {
+    font-size: 1.3em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.blog-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.blog-content li {
+    margin-bottom: 5px;
+}
+
+/* Center the image */
+.blog-image-centered {
+    display: block;
+    max-width: 40%; /* Reduce image width even more */
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Blog Header Styles */
+.blog-header {
+    background-color: #fff; /* White background */
+    border-bottom: 1px solid #e0e0e0; /* Subtle separator line */
+    padding: 15px 0; /* Vertical padding, no horizontal padding needed if content is centered */
+    margin-bottom: 30px; /* Space below header */
+}
+
+.blog-header-content {
+    max-width: 1200px; /* Match page container width */
+    margin: 0 auto; /* Center content */
+    padding: 0 20px; /* Padding on the sides */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Push nav to the right */
+}
+
+/* Style for the navigation within the blog header */
+.blog-header-nav a {
+    margin-left: 20px; /* Space between nav links */
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #555; /* Match title color or choose another */
+}
+
+.blog-header-nav a:hover {
+    color: #0069ff; /* Link hover color */
+    text-decoration: none;
+}
+
+.blog-logo-link {
+    display: inline-block; /* Ensure link wraps image correctly */
+    margin-right: 15px; /* Space between logo and title */
+}
+
+.blog-logo-img {
+    height: 40px; /* Adjust logo size */
+    width: auto;
+    vertical-align: middle; /* Align image nicely with text */
+}
+
+.blog-header-title {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #555; /* Slightly muted title color */
+    border-left: 1px solid #e0e0e0; /* Separator */
+    padding-left: 15px; /* Space after separator */
+    line-height: 1; /* Adjust line height for vertical alignment */
+}
+
+
+/* General Link Styles */
+a {
+    color: #0069ff; /* Example link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Page Container */
+.blog-page-container {
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    padding: 0 20px; /* Padding on the sides */
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Main content takes 2/3, sidebar 1/3 */
+    gap: 40px; /* Gap between main content and sidebar */
+}
+
+/* Main Content Area */
+.blog-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Space between sections */
+}
+
+/* Section Styling */
+.blog-section,
+.sidebar-section {
+    /* No background or shadow needed directly on section if items have cards */
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0; /* Separator line */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.see-all-link {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #0069ff;
+}
+
+/* Featured Post */
+.featured-post-item img {
+    border-radius: 8px; /* Rounded corners for image */
+    margin-bottom: 15px;
+}
+
+.featured-post-item h3 {
+    font-size: 1.5em;
+    margin: 0 0 10px 0;
+}
+
+.featured-post-item h3 a {
+    color: #333; /* Darker color for title link */
+}
+
+.featured-post-item p {
+    color: #555;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Read Time Span */
+.read-time {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* Recent Posts Grid */
+.post-list {
+    display: grid;
+    /* Adjust grid columns for responsiveness if needed */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Gap between post items */
+}
+
+.post-item {
+    background-color: #fff; /* White background for card */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure image corners are clipped */
+    /* No shadow needed if background is white, or add a very subtle one */
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.05); */
+    padding: 0; /* Remove padding if image is edge-to-edge */
+    display: flex;
+    flex-direction: column;
+}
+
+.post-item img {
+    width: 100%;
+    height: 180px; /* Fixed height for grid consistency */
+    object-fit: cover;
+    border-top-left-radius: 8px; /* Match card radius */
+    border-top-right-radius: 8px;
+    margin: 0; /* Remove margin */
+}
+
+.post-item h3 {
+    font-size: 1.1em;
+    margin: 15px 15px 5px 15px; /* Padding for text content */
+}
+.post-item h3 a {
+     color: #333;
+}
+
+.post-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin: 0 15px 10px 15px; /* Padding for text content */
+    flex-grow: 1; /* Allow description to push read-time down */
+}
+
+.post-item .read-time {
+     margin: 0 15px 15px 15px; /* Padding for text content */
+}
+
+
+/* Sidebar */
+.blog-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Space between sidebar sections */
+}
+
+.sidebar-section {
+     /* No background needed if items have cards/background */
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between sidebar items */
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 15px; /* Space between image and text */
+}
+
+.sidebar-item img {
+    width: 60px; /* Smaller image for sidebar */
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px; /* Slightly less rounded */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.sidebar-item div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item a {
+    font-size: 0.95em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 3px;
+}
+
+.sidebar-item .read-time {
+    margin-top: 0; /* Adjust read time margin */
+    font-size: 0.75em;
+}
+
+/* Responsive Adjustments (Example) */
+@media (max-width: 900px) {
+    .blog-page-container {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-header h2 {
+        font-size: 1.5em;
+    }
+    .post-list {
+        grid-template-columns: 1fr; /* Single column for posts */
+    }
+     .featured-post-item h3 {
+        font-size: 1.3em;
+    }
+}

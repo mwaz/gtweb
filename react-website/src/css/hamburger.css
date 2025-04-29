@@ -1,0 +1,53 @@
+/* Hide the navigation list by default */
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.logo span {
+    display: none;
+}
+
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+    #menu.nav-list {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+       /* background-color: #4CAF50; /* Background color matching header */
+        /*position: relative;
+        /* top: 60px;  */
+        /*width: 100%;
+        /* left: 0;  */
+        /*padding: 20px; 
+        /* overflow: hidden; */
+    }
+
+    /* .nav-list.active {
+        display: flex; /* Show menu when active */
+  /* } */
+
+    .hamburger {
+        display: block;
+     }
+
+    .logo span {
+        display: flex;
+       padding: 10px;
+    } 
+
+    .header .logo img {
+        height: 70px; /* Adjust logo size */
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+
+   
+
+

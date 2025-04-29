@@ -1,0 +1,142 @@
+/* Media queries for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .about-main {
+        padding: 15px;
+    }
+
+    .about-main h1 {
+        font-size: 28px;
+    }
+
+    .about-mission-section h2,
+    .about-ethical-sourcing-section h2,
+    .about-packaging-section h2 {
+        font-size: 24px;
+    }
+
+    .about-mission-section p,
+    .about-ethical-sourcing-section p,
+    .about-packaging-section p {
+        font-size: 16px;
+    }
+
+    .header .logo img {
+        height: 80px; /* Smaller logo */
+    }
+
+    .header span {
+        font-size: 0.8rem; /* Even smaller font */
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header .logo {
+        width: 100%; /* Logo takes full width */
+        text-align: center; /* Center the logo */
+        margin-bottom: 10px; /* Add some space below the logo */
+    }
+
+    .nav ul {
+        text-align: center; /* Center nav links */
+    }
+
+    /* Further reduce font size for email in header */
+    .header span:last-child {
+        font-size: 0.7rem;
+    }
+
+    .contact-info-header {
+        width: 100%; /* Take full width */
+        text-align: center; /* Center the content */
+        margin-top: 5px; /* Add some spacing */
+    }
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    /* Stack the navigation links vertically */
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 50px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.25rem;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr; /* Single column on mobile */
+    }
+
+    .about-teaser h2, .sustainability-section h2 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 12px 25px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.875rem;
+    }
+
+    /* Make hero button responsive */
+    .hero-content .btn-primary {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+
+    /* Adjust "Why Choose Us?" section for mobile */
+    #why-choose-us {
+        padding: 30px 20px;
+    }
+
+    #why-choose-us ul {
+        max-width: 100%; /* Allow full width */
+        text-align: left;
+    }
+
+    #why-choose-us li {
+        font-size: 1rem;
+        padding-left: 20px;
+    }
+
+    /* Adjust Featured Herbs section for mobile */
+    .featured-products {
+        padding: 30px 20px;
+    }
+
+    /* Adjust Testimonials/Certifications sections for mobile */
+    #testimonials,
+    #certifications {
+        padding: 30px 20px;
+    }
+}
