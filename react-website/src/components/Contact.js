@@ -126,8 +126,8 @@ function Contact() {
             <h2>Contact Information</h2>
             <p>
               <strong>Email:</strong>
-              <a href="mailto:info@greentwisteexporters.com">
-                info@greentwisteexporters.com
+              <a href="mailto:greentwiste@gmail.com">
+                greentwiste@gmail.com
               </a>
             </p>
             <p>

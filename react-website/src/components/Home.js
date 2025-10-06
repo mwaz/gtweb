@@ -66,7 +66,7 @@ function Home() {
           />
           <div className="header-text">
             <h1>Greentwiste Exporters</h1>
-            <p>Phone: +254702449450 | Email: info@greentwisteexporters.com</p>
+            <p>Phone: +254702449450 | Email: greentwiste@gmail.com</p>
           </div>
         </div>
 

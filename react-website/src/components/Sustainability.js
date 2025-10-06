@@ -33,7 +33,7 @@ function Sustainability() {
           />
           <span>Greentwiste Growers and Exporters </span>
           <span> Phone: +254702449450 </span>
-          <span> Email: info@greentwisteexporters.com </span>
+          <span> Email: greentwiste@gmail.com </span>
         </div>
         <nav className="nav">
           <a
